@@ -216,11 +216,11 @@ The images in the zip file will be added to the **Burned Home** class.
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelZipFile2ClassNotHomesNegative.png)
 
-You are now ready to train your model. This will take about 5-10 minutes, so if you don't feel like waiting we have provided a pre-trained model. Choose if you want to use the pre-trained model ([option 1](#option-1-locate-the-pre-trained-model-quick-option)) or if you want to train the model yourself ([option 2](#option-2-train-your-watson-visual-recognition-custom-classifier-optional)).
+You are now ready to train your model. This will take about 5-10 minutes, so if you don't feel like waiting we have provided a pre-trained model. Choose if you want to use the pre-trained model ([option 1](#option-1-locate-the-pre-trained-model)) or if you want to train the model yourself ([option 2](#option-2-train-your-watson-visual-recognition-custom-classifier)).
 
-#### Option 1: locate the pre-trained model (quick option)
+#### Option 1: locate the pre-trained model
 
-#### Option 2: train your Watson Visual Recognition Custom Classifier (optional)
+#### Option 2: train your Watson Visual Recognition Custom Classifier
 
 1. Click on **Train Model**.
 
