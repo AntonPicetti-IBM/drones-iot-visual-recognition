@@ -27,16 +27,3 @@ This tutorial can be completed using an IBM Cloud Lite account.
 ## Estimated time
 
 You can complete this task in no more than 15 minutes.
-
-# Hands on Lab Overview
-
-The instructions in this Hands on Lab can be used in many scenarios.  Drone imagery can be used to identify homes, buildings, neighborhoods, landscape, agricultural farms, and industrial sites.
-
-Several examples of these drone image instructions are included :
-
-* [Wild Fires](/WildFires/WILDFIRES.md) - Survey wildfire damaged neighborhoods and identify burned homes and intact homes.
-* [Scotland](/Scotland/SCOTLAND.md) - Survey Scottish countryside and identify Castles and traditional earthen / grass covered Black Houses.
-* [Flooding](/Flooding/FLOODING.md) - Survey flooded neighborhoods and detect survivors on rooftops.
-
-*Quick links :*
-[**Home**](/README.md) - [Wild Fires](/WildFires/WILDFIRES.md) - [Scotland](/Scotland/SCOTLAND.md) - [Flooding](/Flooding/FLOODING.md)
