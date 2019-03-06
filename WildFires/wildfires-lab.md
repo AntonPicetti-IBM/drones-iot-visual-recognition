@@ -270,7 +270,7 @@ You can incorporate this Watson Visual Recognition Custom Classifier model into 
 
 2. Use the code snippets below to classify images against your model. For reference, the full [API specification](https://www.ibm.com/watson/developercloud/visual-recognition/api/v3/) is available.
 
-   **API endpoint**
+**API endpoint**
 
 ```
 https://gateway.watsonplatform.net/visual-recognition/api
