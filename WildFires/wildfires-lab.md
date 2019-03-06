@@ -124,15 +124,13 @@ You are ready to set up your project with Watson Visual Recognition.
 
 ### Add Assets to your Watson Studio Project
 
-To add assets, click the **Assets** tab.
+1. Click **Add to project**.
 
-![Watson Studio screenshot](screenshots/WatsonStudio-Assets.png)
+![Watson Studio screenshot](screenshots/WatsonStudio-Assets_new.png)
 
-#### Create a New Visual Recognition model
+2. Select **Visual Recognition model**.
 
-To create a new Visual Recognition model, click **New Visual Recognition model**.
-
-![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModel.png)
+![Watson Studio screenshot](screenshots/WatsonStudio-Choose-asset_new.png)
 
 #### Provision a new Watson Visual Recognition Service instance
 
