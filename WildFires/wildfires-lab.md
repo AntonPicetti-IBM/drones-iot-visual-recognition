@@ -59,3 +59,241 @@ In this lab, we have created three zip files of pictures recorded by drones. The
 - Aerial drone images of forests, roads, rivers to be used for the negative class. [NotHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/NotHomes.zip)
 
 *Source attribution: USA Today [article](https://www.usatoday.com/in-depth/news/nation-now/2018/08/02/drone-aerials-california-wildfire-devastation/889885002/), various internet sources*
+
+## Step 3 - Set up Watson Studio
+
+In this section, we create a Project in Watson Studio and create a Watson Visual Recognition model to identify images in several classes.
+
+### Create Cloud Object Storage
+
+1. Create a Cloud Object Storage instance by visiting the [IBM Cloud Catalog](https://console.bluemix.net/catalog/?search=object).
+
+2. Search on **Object** in the IBM Cloud Catalog.
+
+3. Click on the **Object Storage** service tile.
+
+![Cloud Object Storage Catalog screenshot](../screenshots/CloudObjectStorage-Catalog.png)
+
+4. Click **Create**.
+
+![Cloud Object Storage Catalog screenshot](../screenshots/CloudObjectStorage-Service.png)
+
+### Create a Watson Studio service instance
+
+1. Create a **Watson Studio** service instance from the [IBM Cloud Catalog](https://console.bluemix.net/catalog/?search=studio).
+
+2. Search on **Studio** in the IBM Cloud Catalog.
+
+![Watson Studio Catalog screenshot](../screenshots/WatsonStudio-Catalog.png)
+
+3. Click on the **Watson Studio** service tile.
+
+![Watson Studio Service screenshot](../screenshots/WatsonStudio-Service.png)
+
+4. Click **Create**.
+
+5. After the Watson Studio service is created, click on **Get Started** or visit [Watson Studio](https://dataplatform.cloud.ibm.com).
+
+![Watson Studio Launch screenshot](../screenshots/WatsonStudio-Launch.png)
+
+6. Login with your IBM Cloud account.
+
+7. Walk through the introductory tutorial to learn about Watson Studio.
+
+![Watson Studio Welcome screenshot](../screenshots/WatsonStudio-Welcome.png)
+
+### Watson Studio Projects
+
+Projects are your workspace to organize your resources, such as assets like data, collaborators, and analytic tools like notebooks and models.
+
+#### Create a New Project
+
+1. Click on **Create a Project**.
+
+2. Select the **Standard** tile and press the **Create Project** button.
+
+![Watson Studio New project screenshot](../screenshots/WatsonStudio-NewProject-Tiles.png)
+
+3. Name your project **Wildfire Burned Homes**. The Cloud Object Storage instance created in an earlier step should be prefilled.
+
+4. Press **Create**.
+
+![Watson Studio New project screenshot](screenshots/WatsonStudio-NewProject.png)
+
+You are ready to set up your project with Watson Visual Recognition.
+
+### Add Assets to your Watson Studio Project
+
+To add assets, click the **Assets** tab.
+
+![Watson Studio screenshot](screenshots/WatsonStudio-Assets.png)
+
+#### Create a New Visual Recognition model
+
+To create a new Visual Recognition model, click **New Visual Recognition model**.
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModel.png)
+
+#### Provision a new Watson Visual Recognition Service instance
+
+Your project must be associated with a Watson Visual Recognition Service instance. To associate it, click the **click here** link in the window to provision a new service.
+
+![Watson Studio screenshot](../screenshots/WatsonStudio-VisualRecognitionService.png)
+
+#### Create a Watson Visual Recognition Service
+
+1. Select the **Lite** plan and note the features.
+
+2. Scroll to the bottom and click **Create**.
+
+![Watson Studio screenshot](../screenshots/WatsonStudio-VisualRecognitionServiceInstance.png)
+
+#### Rename Visual Recognition Model
+
+The **Default Custom Model** name is not descriptive so let's rename it
+
+1. Click on the **pencil** icon to edit the name.
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelRename1.png)
+
+2. Rename the model to **Count Burned Homes**.
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelRename2.png)
+
+#### Add Custom Classes to the Watson Visual Recognition Model
+
+1. Click on the **+** symbol to add a class.
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelAddClass1.png)
+
+2. Name this class **Burned Home**.
+
+3. Click **Create**.
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelBurnedHomeClass.png)
+
+4. Add a second custom class by clicking on the **+** symbol again.
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelAddClass2.png)
+
+5. Name this class **Intact Home**.
+
+- Click **Create**.
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelIntactHomeClass.png)
+
+#### Upload Zip Files to Watson Studio Project
+
+- Three zip files have been prepared which contain aerial drone images
+
+- These zip files are on the local lab workstation
+
+- If you following these steps on the web, download the aerial drone zip files here:
+
+  - [BurnedHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/BurnedHomes.zip)
+
+  - [AerialHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/AerialHomes.zip)
+
+  - [NotHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/NotHomes.zip)
+
+- Click on the **Browse** button
+
+- An operating system native File Dialog will open
+
+- Multi-select the three zip files **BurnedHomes.zip**, **AerialHomes.zip**, **NotHomes.zip**
+
+- Upload these zip files to your Watson Studio project
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelAddZipFiles.png)
+
+#### Drag the zip files to Custom Classes
+
+1. Grab the **BurnedHomes.zip** from the right navigation and drag it to the **Burned Home** class
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelZipFiles.png)
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelZipFileDrag.png)
+
+The images in the zip file will be added to the **Burned Home** class
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelZipFile2Class.png)
+
+2. Grab the **AerialHomes.zip** from the right navigation and drag it to the **Intact Home** class
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelZipFile2ClassIntactHome.png)
+
+3. Grab the **NotHomes.zip** from the right navigation and drag it to the **Negative** class
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelZipFile2ClassNotHomesNegative.png)
+
+#### Train your Watson Visual Recognition Custom Classifier
+
+1. Click on **Train Model**.
+
+2. Wait a few minutes for the model to train on the images
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelTrain.png)
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelTraining.png)
+
+After the model has been trained, click on the **Click here** link to view and test your model.
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelTrained.png)
+
+## Step 4 - Test your model
+
+1. Review the Classes and Model details.
+
+2. Click on the **Test** tab.
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelSummary.png)
+
+### Test Watson Visual Recognition Custom Classifier with sample images
+
+1. Visit this [UK Daily Mail article](http://www.dailymail.co.uk/news/article-6045685/Incredible-drone-images-charred-trees-burnt-homes-eighth-person-dies-California.html) and download a few of these drone images of devastated California neighborhoods.
+
+2. Load the images into the **Test** page by browsing or dragging the images into the Test page.
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelTestBlank.png)
+
+3. Inspect the scores returned by the Watson Visual Recognition Custom Classifier
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelTestImage.png)
+
+### Implement Watson Visual Recognition custom model in your Applications
+
+You can incorporate this Watson Visual Recognition Custom Classifier model into your applications using a variety of programming languages.
+
+1. Click the **Implementation** tab to review the Code snippets.
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelImplement.png)
+
+2. Use the code snippets below to classify images against your model. For reference, the full [API specification](https://www.ibm.com/watson/developercloud/visual-recognition/api/v3/) is available.
+
+   **API endpoint**
+
+```
+https://gateway.watsonplatform.net/visual-recognition/api
+```
+
+**Authentication**
+
+```
+curl -u "apikey:{apikey}" "https://gateway.watsonplatform.net/visual-recognition/api/{method}"
+```
+
+**Classify an image (GET)**
+
+```
+curl -u "apikey:{apikey}" "https://gateway.watsonplatform.net/visual-recognition/api/v3/classify?url=https://watson-developer-cloud.github.io/doc-tutorial-downloads/visual-recognition/fruitbowl.jpg&version=2018-03-19&classifier_ids=CountBurnedHomes_1382538940"
+```
+
+**Classify an image (POST)**
+
+```
+curl -X POST -u "apikey:{apikey}"-F "images_file=@fruitbowl.jpg" -F "threshold=0.6" -F "classifier_ids=CountBurnedHomes_1382538940" "https://gateway.watsonplatform.net/visual-recognition/api/v3/classify?version=2018-03-19"
+```
+
+### Congratulations
+
+You have completed the Drone Visual Recognition Lab and have surveyed wildfire damaged neighborhoods and identified burned homes and intact homes.
