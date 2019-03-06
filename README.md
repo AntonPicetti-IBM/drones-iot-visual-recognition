@@ -1,11 +1,12 @@
 # Drones-IoT-Visual-Recognition
+
 Visual Recognition of Drone Imagery Hands on Lab
 
 ## Introduction
 
 This hands on lab uses drone aerial images, Watson Studio and Watson Visual Recognition to survey neighborhoods and countrysides.
 
-![Watson Studio screenshot](/Scotland/screenshots/WatsonStudio-VisualRecognitionModelTestResults.png)
+![Watson Studio screenshot](WildFires/screenshots/WatsonStudio-VisualRecognitionModelTestResults.png)
 
 ## Learning objectives
 
