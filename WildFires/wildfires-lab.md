@@ -182,7 +182,7 @@ The **Default Custom Model** name is not descriptive so let's rename it
 
 #### Upload Zip Files to Watson Studio Project
 
-1. Three zip files have been prepared which contain aerial drone images. You should be able to locate these zip files in the **Downloads** directory on your lab workstation. Alternatively the zip files can be downloaded by clicking the links below:
+1. Three zip files have been prepared which contain aerial drone images. You should be able to locate these zip files in the **Downloads** directory on your lab workstation. Alternatively, the zip files can be downloaded by clicking the links below:
 
    - [BurnedHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/BurnedHomes.zip)
 
