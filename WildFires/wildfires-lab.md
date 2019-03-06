@@ -194,7 +194,7 @@ The **Default Custom Model** name is not descriptive so let's rename it
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelAddZipFiles.png)
 
-3. An operating system native File Dialog will open. Multi-select the three zip files **BurnedHomes.zip**, **AerialHomes.zip**, **NotHomes.zip** and Upload these zip files to your Watson Studio project.
+3. An operating system native File Dialog will open. Multi-select the three zip files **BurnedHomes.zip**, **AerialHomes.zip**, **NotHomes.zip** and upload these zip files to your Watson Studio project.
 
 #### Drag the zip files to Custom Classes
 
