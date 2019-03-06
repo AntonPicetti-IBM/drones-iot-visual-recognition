@@ -50,7 +50,7 @@ There are many types of drones available that range from toys to industrial use 
 
 One of the fun experiences of flying a drone is capturing video or pictures from a unique aerial perspective. You can use your drone to capture images of interesting objects that you want to train a visual recognition model to autonomously identify.
 
-In this lab, we have created three zip files of pictures recorded by drones. The lab will use these images to identify neighborhoods affected by the devastating 2018 West Coast wildfires. These images will be used as our training set.
+In this lab, we have created three zip files of pictures recorded by drones. The lab will use these images to identify neighborhoods affected by the devastating 2018 West Coast wildfires. These images will be used as our training set. 
 
 - Aerial drone images of burned homes - [BurnedHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/BurnedHomes.zip)
 
@@ -176,51 +176,43 @@ The **Default Custom Model** name is not descriptive so let's rename it
 
 5. Name this class **Intact Home**.
 
-- Click **Create**.
+6. Click **Create**.
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelIntactHomeClass.png)
 
 #### Upload Zip Files to Watson Studio Project
 
-- Three zip files have been prepared which contain aerial drone images
+1. Three zip files have been prepared which contain aerial drone images. You should be able to locate these zip files in the **Downloads** directory of your lab workstation. Alternatively the zip files can be downloaded by clicking the links below:
 
-- These zip files are on the local lab workstation
+   - [BurnedHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/BurnedHomes.zip)
 
-- If you following these steps on the web, download the aerial drone zip files here:
+   - [AerialHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/AerialHomes.zip)
 
-  - [BurnedHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/BurnedHomes.zip)
+   - [NotHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/NotHomes.zip)
 
-  - [AerialHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/AerialHomes.zip)
-
-  - [NotHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/NotHomes.zip)
-
-- Click on the **Browse** button
-
-- An operating system native File Dialog will open
-
-- Multi-select the three zip files **BurnedHomes.zip**, **AerialHomes.zip**, **NotHomes.zip**
-
-- Upload these zip files to your Watson Studio project
+2. Click **Browse**.
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelAddZipFiles.png)
 
+3. An operating system native File Dialog will open. Multi-select the three zip files **BurnedHomes.zip**, **AerialHomes.zip**, **NotHomes.zip** and Upload these zip files to your Watson Studio project.
+
 #### Drag the zip files to Custom Classes
 
-1. Grab the **BurnedHomes.zip** from the right navigation and drag it to the **Burned Home** class
+1. Grab the **BurnedHomes.zip** from the right navigation and drag it to the **Burned Home** class.
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelZipFiles.png)
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelZipFileDrag.png)
 
-The images in the zip file will be added to the **Burned Home** class
+The images in the zip file will be added to the **Burned Home** class.
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelZipFile2Class.png)
 
-2. Grab the **AerialHomes.zip** from the right navigation and drag it to the **Intact Home** class
+2. Grab the **AerialHomes.zip** from the right navigation and drag it to the **Intact Home** class.
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelZipFile2ClassIntactHome.png)
 
-3. Grab the **NotHomes.zip** from the right navigation and drag it to the **Negative** class
+3. Grab the **NotHomes.zip** from the right navigation and drag it to the **Negative** class.
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelZipFile2ClassNotHomesNegative.png)
 
@@ -228,7 +220,7 @@ The images in the zip file will be added to the **Burned Home** class
 
 1. Click on **Train Model**.
 
-2. Wait a few minutes for the model to train on the images
+2. Wait a few minutes for the model to train on the images.
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelTrain.png)
 
@@ -254,7 +246,7 @@ After the model has been trained, click on the **Click here** link to view and t
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelTestBlank.png)
 
-3. Inspect the scores returned by the Watson Visual Recognition Custom Classifier
+3. Inspect the scores returned by the Watson Visual Recognition Custom Classifier.
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelTestImage.png)
 
