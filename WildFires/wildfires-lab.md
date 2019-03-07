@@ -220,7 +220,7 @@ You are now ready to train your model. This will take about 5-10 minutes, so if 
 
 #### Option 1: locate the pre-trained model
 
-When you have located the pre-trained model you are ready to [test the model](#test-your-model).
+When you have located the pre-trained model you are ready to [test the model](#step-4---test-your-model).
 
 #### Option 2: train your Watson Visual Recognition Custom Classifier
 
