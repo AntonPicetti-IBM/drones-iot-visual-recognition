@@ -228,11 +228,11 @@ You are now ready to train your model. This will take about 5-10 minutes, so if 
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelPre-trained_new.png)
 
-3. Go to the **Assets** tab.
+3. Go to the **
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelAssetsTab_new.png)
 
-4. Choose the pre-trained model **Count Burned Homes**.
+
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelChooseModel_new.png)
 
@@ -256,7 +256,7 @@ After the model has been trained, click on the **Click here** link to view and t
 
 1. Review the Classes and Model details.
 
-2. Click the **Test** tab.
+2. Click on the **Test** tab.
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelSummary.png)
 
