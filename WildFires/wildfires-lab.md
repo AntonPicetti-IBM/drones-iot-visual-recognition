@@ -220,6 +220,16 @@ You are now ready to train your model. This will take about 5-10 minutes, so if 
 
 #### Option 1: locate the pre-trained model
 
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelProjects_new.png)
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelPre-trained_new.png)
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelAssetsTab_new.png)
+
+
+
+![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelChooseModel_new.png)
+
 When you have located the pre-trained model you are ready to [test the model](#step-4---test-your-model).
 
 #### Option 2: train your Watson Visual Recognition Custom Classifier
