@@ -50,44 +50,6 @@ In this lab, we have created three zip files of pictures recorded by drones. The
 
 In this section, we create a Project in Watson Studio and create a Watson Visual Recognition model to identify images in several classes.
 
-### Create Cloud Object Storage
-
-1. Create a Cloud Object Storage instance by visiting the [IBM Cloud Catalog](https://console.bluemix.net/catalog/?search=object).
-
-2. Search on **Object** in the IBM Cloud Catalog.
-
-3. Click on the **Object Storage** service tile.
-
-![Cloud Object Storage Catalog screenshot](../screenshots/CloudObjectStorage-Catalog.png)
-
-4. Click **Create**.
-
-![Cloud Object Storage Catalog screenshot](../screenshots/CloudObjectStorage-Service.png)
-
-### Create a Watson Studio service instance
-
-1. Create a **Watson Studio** service instance from the [IBM Cloud Catalog](https://console.bluemix.net/catalog/?search=studio).
-
-2. Search on **Studio** in the IBM Cloud Catalog.
-
-![Watson Studio Catalog screenshot](../screenshots/WatsonStudio-Catalog.png)
-
-3. Click on the **Watson Studio** service tile.
-
-![Watson Studio Service screenshot](../screenshots/WatsonStudio-Service.png)
-
-4. Click **Create**.
-
-5. After the Watson Studio service is created, click on **Get Started** or visit [Watson Studio](https://dataplatform.cloud.ibm.com).
-
-![Watson Studio Launch screenshot](../screenshots/WatsonStudio-Launch.png)
-
-6. Login with your IBM Cloud account.
-
-7. Walk through the introductory tutorial to learn about Watson Studio.
-
-![Watson Studio Welcome screenshot](../screenshots/WatsonStudio-Welcome.png)
-
 ### Watson Studio Projects
 
 Projects are your workspace to organize your resources, such as assets like data, collaborators, and analytic tools like notebooks and models.
@@ -95,6 +57,8 @@ Projects are your workspace to organize your resources, such as assets like data
 #### Create a New Project
 
 1. Click on **Create a Project**.
+
+   ![Watson Studio Welcome screenshot](../screenshots/WatsonStudio-Welcome.png)
 
 2. Select the **Standard** tile and press the **Create Project** button.
 
