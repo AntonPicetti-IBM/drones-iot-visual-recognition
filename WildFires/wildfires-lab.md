@@ -32,21 +32,7 @@ This tutorial can be completed using an IBM Cloud Lite account.
 
 You can complete this task in no more than 15 minutes.
 
-## Step 1 - Learn about Drones
-
-There are many types of drones available that range from toys to industrial use cases. Many of the drones now include a camera that can store or stream aerial video to the ground. Using the livestream video frames, we can sample frames and send the images to Watson Visual Recognition for classification.
-
-- Pocket toy drones
-
-  - [Contixo F8](http://www.contixo.com/products/Contixo-F8-Foldable-Pocket-Size-Selfie-Drone-Voice-Controls-720P-HD-Wifi-Live-FPV-Video-Camera-360-Stunts-8-10min-Fly-Time-Gravity-Control-Red_308.html)
-
-- Tello - Control a [Tello Drone using Node-RED](https://github.com/johnwalicki/Node-RED-Tello-Control)
-
-- Hobbyist drones
-
-- Commercial drones
-
-## Step 2 - Capturing Images
+## Step 1 - Capturing Images
 
 One of the fun experiences of flying a drone is capturing video or pictures from a unique aerial perspective. You can use your drone to capture images of interesting objects that you want to train a visual recognition model to autonomously identify.
 
@@ -60,7 +46,7 @@ In this lab, we have created three zip files of pictures recorded by drones. The
 
 *Source attribution: USA Today [article](https://www.usatoday.com/in-depth/news/nation-now/2018/08/02/drone-aerials-california-wildfire-devastation/889885002/), various internet sources*
 
-## Step 3 - Set up Watson Studio
+## Step 2 - Set up Watson Studio
 
 In this section, we create a Project in Watson Studio and create a Watson Visual Recognition model to identify images in several classes.
 
@@ -252,7 +238,7 @@ After the model has been trained, click on the **Click here** link to view and t
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelTrained.png)
 
-## Step 4 - Test your model
+## Step 3 - Test your model
 
 1. Review the Classes and Model details.
 
