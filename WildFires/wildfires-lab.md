@@ -214,7 +214,9 @@ After the model has been trained, click on the **Click here** link to view and t
 
 1. Visit this [UK Daily Mail article](http://www.dailymail.co.uk/news/article-6045685/Incredible-drone-images-charred-trees-burnt-homes-eighth-person-dies-California.html) and download a few of these drone images of devastated California neighborhoods.
 
-2. Load the images into the **Test** page by browsing or dragging the images into the Test page.
+2. Locate the folder **Test-images** on your lab workstation or [download](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/Test-images.zip) it.
+
+3. Load the images into the **Test** page by browsing or dragging the images into the Test page.
 
 ![Watson Studio screenshot](screenshots/WatsonStudio-VisualRecognitionModelTestBlank.png)
 
