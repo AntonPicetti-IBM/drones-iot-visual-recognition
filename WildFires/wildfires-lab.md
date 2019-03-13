@@ -42,7 +42,7 @@ In this lab, we have created three zip files of pictures recorded by drones. The
 
 - Aerial drone images of intact homes - [AerialHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/AerialHomes.zip)
 
-- Aerial drone images of forests, roads, rivers to be used for the negative class. [NotHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/NotHomes.zip)
+- Aerial drone images of forests, roads, rivers to be used for the negative class - [NotHomes.zip](https://github.com/AntonPicetti-IBM/drones-iot-visual-recognition/raw/master/WildFires/classes/NotHomes.zip)
 
 *Source attribution: USA Today [article](https://www.usatoday.com/in-depth/news/nation-now/2018/08/02/drone-aerials-california-wildfire-devastation/889885002/), various internet sources*
 
